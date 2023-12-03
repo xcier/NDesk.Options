@@ -135,11 +135,11 @@ using System.Security.Permissions;
 using System.Text;
 using System.Text.RegularExpressions;
 
-#if NDESK_OPTIONS_LINQ
+#if LINQ
 using System.Linq;
 #endif
 
-#if NDESK_OPTIONS_TEST
+#if TEST
 using NDesk.Options;
 #endif
 
@@ -698,7 +698,7 @@ namespace Mono.Options
 			return new OptionContext (this);
 		}
 
-#if NDESK_OPTIONS_LINQ
+#if LINQ
 		public List<string> Parse (IEnumerable<string> arguments)
 		{
 			bool process = true;
